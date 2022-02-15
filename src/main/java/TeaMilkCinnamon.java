@@ -1,6 +1,6 @@
-public class TeaMilkCinnamon implements CostOfDrinks{
+public class TeaMilkCinnamon implements CostOfDrinks {
     @Override
     public int calculatesCost() {
-        return 15;
+        return TEA + MILK + CINNAMON;
     }
 }

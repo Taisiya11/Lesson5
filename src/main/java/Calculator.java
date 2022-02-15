@@ -1,4 +1,5 @@
 //По ошибке выгрузки кода на github данный класс будет называться калькулятором
+
 /**
  * Класс вывода всех напитков из кофемашины
  */
@@ -8,6 +9,6 @@ public class Calculator {
         System.out.println("Введите выбранный пункт напитка:");
         ImplementsChoice implementsChoice = new ImplementsChoice();
         implementsChoice.selectsMenuItem();
-        System.out.println("Итоговая стоимость: "+implementsChoice.selectsMenuItem());
+        System.out.println("Итоговая стоимость: " + implementsChoice.selectsMenuItem());
     }
 }

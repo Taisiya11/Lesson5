@@ -20,10 +20,10 @@ public class ImplementsChoice {
             selectedItem=coffee.calculatesCost();
         }
         if (values == 3) {
-            selectedItem=teaMilkCost.calculatesCost();
+            selectedItem=coffeeMilkCost.calculatesCost();
         }
         if (values == 4) {
-            selectedItem=coffeeMilkCost.calculatesCost();
+            selectedItem=teaMilkCost.calculatesCost();
         }
         if (values == 5) {
             selectedItem=teaMilkCinnamon.calculatesCost();

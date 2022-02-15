@@ -1,6 +1,6 @@
 public class CoffeeMilkCinnamon implements CostOfDrinks{
     @Override
     public int calculatesCost() {
-        return 17;
+        return COFFEE+MILK+CINNAMON;
     }
 }
