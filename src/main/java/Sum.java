@@ -1,8 +1,7 @@
 public class Sum implements CalculableCalculator {
-    int[] numbers = (new Add()).number();
 
     @Override
-    public int calculates() {
-        return numbers[0] + numbers[1];
+    public int calculates(int one1, int two1) {
+        return one1 + two1;
     }
 }

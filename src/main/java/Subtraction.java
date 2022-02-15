@@ -1,8 +1,7 @@
 public class Subtraction implements CalculableCalculator {
-    int[] numbers = (new Add()).number();
 
     @Override
-    public int calculates() {
-        return numbers[0] / numbers[1];
+    public int calculates(int one, int two) {
+        return one / two;
     }
 }

@@ -1,3 +1,3 @@
 public interface CalculableCalculator {
-    int calculates();
+    int calculates(int one, int two);
 }
