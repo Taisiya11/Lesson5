@@ -2,10 +2,8 @@
  * Класс анализа выбранного пункта меню и присвоение его стоимости
  */
 public class ImplementsChoice {
-    EnteringValues enteringValues = new EnteringValues();
-    int values = enteringValues.numberMenu();
     int selectedItem;
-    public int selectsMenuItem() {
+    public int selectsMenuItem(int values) {
         CostOfDrinks tea = new TeaCost();
         CostOfDrinks coffee = new CoffeeCost();
         CostOfDrinks teaMilkCost = new TeaMilkCost();

@@ -6,9 +6,6 @@ import org.testng.Assert;
  */
 public class CoffeeMachineTest {
     @Test
-//    Не удалось протестировать саму реализацию выбора напитка(класс ImplementsChoice) из-за переменной, которая вводится с клавиатуры
-//    и обозначает выбранный пунут меню. Так как в метод я ее не передаю и не могу в тесте задать новое значение.
-//    Наверное код надо делать еще более гибким.
     public void testsCoffeeMachine() {
         CostOfDrinks coffeeCost = new CoffeeCost();
         CostOfDrinks teaCost = new TeaCost();
@@ -28,5 +25,15 @@ public class CoffeeMachineTest {
         Assert.assertEquals(teaMilkCost.calculatesCost(), 13);
         Assert.assertEquals(coffeeMilkCinnamon.calculatesCost(), 17);
         Assert.assertEquals(teaMilkCinnamon.calculatesCost(), 15);
+    }
+    @Test
+    public void testImplementsChoice() {
+        ImplementsChoice implementsChoice = new ImplementsChoice();
+        Assert.assertEquals(implementsChoice.selectsMenuItem(1),8);
+        Assert.assertEquals(implementsChoice.selectsMenuItem(2),10);
+        Assert.assertEquals(implementsChoice.selectsMenuItem(3),15);
+        Assert.assertEquals(implementsChoice.selectsMenuItem(4),13);
+        Assert.assertEquals(implementsChoice.selectsMenuItem(5),15);
+        Assert.assertEquals(implementsChoice.selectsMenuItem(6),17);
     }
 }
